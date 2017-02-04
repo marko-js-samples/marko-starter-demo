@@ -1,0 +1,21 @@
+{
+  "name": "marko-starter-demo",
+  "version": "1.0.0",
+  "description": "Demo of how to build an app using marko-starter",
+  "main": "index.js",
+  "repository": {},
+  "author": "Phillip Gates-Idem <phillip.idem@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.13.0",
+    "eslint-config-marko": "^1.0.1"
+  },
+  "dependencies": {
+    "marko-starter": "philidem/marko-starter",
+    "marko": "^4.0.0-rc.12"
+  },
+  "scripts": {
+    "start": "marko-starter server",
+    "build": "marko-starter build"
+  }
+}
