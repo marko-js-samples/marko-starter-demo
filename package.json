@@ -9,8 +9,8 @@
     "eslint-config-marko": "^1.0.1"
   },
   "dependencies": {
-    "marko-starter": "git://github.com/marko-js/marko-starter.git",
-    "marko": "^4.0.0-rc.12"
+    "marko": "^4.0.0-rc.20",
+    "marko-starter": "^0.0.1"
   },
   "scripts": {
     "start": "marko-starter server",
