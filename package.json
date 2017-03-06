@@ -9,8 +9,8 @@
     "eslint-config-marko": "^1.0.1"
   },
   "dependencies": {
-    "marko": "^4.0.0-rc.20",
-    "marko-starter": "^0.0.1"
+    "marko": "^4.0.0",
+    "marko-starter": "^1.0.0"
   },
   "scripts": {
     "start": "marko-starter server",
