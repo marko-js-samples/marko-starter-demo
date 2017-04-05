@@ -12,7 +12,7 @@
     "eslint-config-marko": "^1.0.1"
   },
   "dependencies": {
-    "marko": "^4.0.0",
+    "marko": "^4.2.4",
     "marko-starter": "^1.0.0"
   },
   "scripts": {
