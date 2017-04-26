@@ -8,3 +8,4 @@ dist/
 *.marko.js
 .DS_STORE
 dump.rdb
+.marko-devtools/
