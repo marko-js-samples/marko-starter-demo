@@ -16,7 +16,10 @@
     "marko-starter": "^1.0.0"
   },
   "scripts": {
+    "build": "marko-starter build-static",
     "start": "marko-starter server",
-    "build": "marko-starter build"
+    "serve-static": "marko-starter serve-static",
+    "lint": "eslint src/",
+    "test": "npm run lint"
   }
 }
