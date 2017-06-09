@@ -1,6 +1,6 @@
 {
   "name": "marko-starter-demo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Demo of how to build an app using marko-starter",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "marko-starter server",
-    "build": "NODE_ENV=production marko-starter build-static",
+    "build": "NODE_ENV=production marko-starter build",
     "serve-static": "NODE_ENV=production marko-starter serve-static",
     "lint": "eslint src/",
     "test": "npm run lint"
