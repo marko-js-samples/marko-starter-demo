@@ -16,9 +16,9 @@
     "marko-starter": "^1.0.0"
   },
   "scripts": {
-    "build": "marko-starter build",
     "start": "marko-starter server",
-    "serve-static": "marko-starter serve-static",
+    "build": "NODE_ENV=production marko-starter build",
+    "serve-static": "NODE_ENV=production marko-starter serve-static",
     "lint": "eslint src/",
     "test": "npm run lint"
   }

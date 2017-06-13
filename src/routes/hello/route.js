@@ -1,5 +1,3 @@
-const template = require('./index.marko');
-
 exports.path = '/hello/:name';
 
 // The following is used when doing static builds
@@ -9,14 +7,17 @@ exports.params = [
   { name: 'world' }
 ];
 
+// You can also export a custom handler
+// that can do stuff before rendering the template
+/*
+const template = require('./index.marko');
 exports.handler = (input, out) => {
-  var name = input.params.name;
+  let name = input.params.name;
 
   // delegate rendering to the template
-  template.render({
-    name
-  }, out);
+  template.render(input, out);
 
-  // This will also work:
+  // Or don't render the template and send other content:
   // out.end('<html>...</html>')
 };
+*/
