@@ -1,0 +1,19 @@
+class {
+    sendOpenRequest() {
+        let url = `http://${window.location.hostname}:${this.input.port}/${this.input.src}`;
+        fetch(url);
+    }
+}
+
+style {
+    .sourcelink {
+        cursor:pointer;
+    }
+    .sourcelink:hover * {
+        text-decoration:underline;
+    }
+}
+
+<a.sourcelink on-click('sendOpenRequest')>
+    <include(input.renderBody)/>
+</a>
