@@ -1,0 +1,18 @@
+{
+  "ignore": {
+    "files": [
+      ".createconfig",
+      ".editorconfig",
+      ".eslintignore",
+      ".eslintrc.yml"
+    ],
+    "dependencies": [
+      "eslint",
+      "eslint-config-marko"
+    ],
+    "scripts": [
+      "lint",
+      "test"
+    ]
+  }
+}
