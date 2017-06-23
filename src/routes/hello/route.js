@@ -4,7 +4,8 @@ exports.path = '/hello/:name';
 // to generate all pages for all enumerated params
 exports.params = [
   { name: 'marko' },
-  { name: 'world' }
+  { name: 'world' },
+  { name: 'routing' }
 ];
 
 // You can also export a custom handler

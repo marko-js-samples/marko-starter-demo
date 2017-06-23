@@ -17,7 +17,7 @@ class {
   handleStartClick() {
     this.state.running = true;
 
-    this.intervalId = setInterval(() => {
+    this.intervalId = setInterval(function () {
       this.state.elapsedTime += 0.1;
     }, 100);
   }
