@@ -8,8 +8,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.13.0",
-    "eslint-config-marko": "^1.0.1"
+    "eslint": "^4.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "prettier": "^1.5.2"
   },
   "dependencies": {
     "marko": "^4.2.4",
@@ -20,6 +22,23 @@
     "build": "NODE_ENV=production marko-starter build",
     "serve-static": "NODE_ENV=production marko-starter serve-static",
     "lint": "eslint src/",
-    "test": "npm run lint"
-  }
+    "test": "npm run lint",
+    "prettier": "prettier src/**/*.{js,css,less} *.js --write"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "eslintIgnore": [
+    "*.marko.js"
+  ]
 }

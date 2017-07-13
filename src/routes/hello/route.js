@@ -1,12 +1,8 @@
-exports.path = '/hello/:name';
+exports.path = "/hello/:name";
 
 // The following is used when doing static builds
 // to generate all pages for all enumerated params
-exports.params = [
-  { name: 'marko' },
-  { name: 'world' },
-  { name: 'routing' }
-];
+exports.params = [{ name: "marko" }, { name: "world" }, { name: "routing" }];
 
 // You can also export a custom handler
 // that can do stuff before rendering the template
