@@ -1,11 +1,20 @@
-.git/
-node_modules/
-dist/
-.cache/
-*.log
-*.bak.js
-*.bak
+# OS
+*.swp
+.DS_Store
+
+# Editor Configs
+.idea
+.vscode
+*.sublime*
+
+# Generated Files
+dist
+.cache
+coverage
+.nyc-output
 *.marko.js
-.DS_STORE
-dump.rdb
-.marko-devtools/
+.marko-cli
+.marko-devtools
+
+# NPM
+node_modules
