@@ -37,18 +37,17 @@ class {
 }
 
 <div>
-  <p>
-    Elapsed time: ${state.elapsedTime.toFixed(1)}s
-  </p>
-  <button type="button" disabled=(state.running === true)
-    on-click("handleStartClick")>
-    Start
-  </button>
-  <button type="button" disabled=(state.running !== true)
-    on-click("handlePauseClick")>
-    Pause
-  </button>
-  <button type="button" disabled=(state.elapsedTime === 0 && state.running === false) on-click("handleStopClick")>
-    Stop/Clear
-  </button>
+  <p>Elapsed time: ${state.elapsedTime.toFixed(1)}s</p>
+  <button
+    type="button"
+    disabled=(state.running === true)
+    on-click("handleStartClick")>Start</button>
+  <button
+    type="button"
+    disabled=(state.running !== true)
+    on-click("handlePauseClick")>Pause</button>
+  <button
+    type="button"
+    disabled=((state.elapsedTime === 0) && (state.running === false))
+    on-click("handleStopClick")>Stop/Clear</button>
 </div>
