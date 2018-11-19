@@ -1,7 +1,7 @@
 {
   "name": "marko-starter-demo",
   "description": "Demo of how to build an app using marko-starter",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "dependencies": {
     "marko": "^4.13.10",
     "marko-starter": "^2.0.4"
